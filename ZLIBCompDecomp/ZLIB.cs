@@ -4,7 +4,7 @@ using zlib;
 
 namespace NoamRaz.ZLIB
 {
-	class ZLIB
+	public class ZLIB
 	{
         /// <summary>
         /// Compress string value and save result to a file
