@@ -6,14 +6,29 @@
 
 **ZLIB Binary Compressor & Decompressor written in C-Sharp (C#)**
 
-The best easy to use compressor & decompressor for zlib built in c-sharp is ready for you to use for you projects free and open source!
+The best easy to use compressor & decompressor for zlib is ready for you to use for you projects free and open source!
 
 Options the library has to offer:
 
  - Compress file content, string, and buffers (Byte array).
  - Decompress any compressed file
 
-Example for using the library:
+## Setup
+
+Open a Visual Studio C# project, Then follow the steps below.
+
+### Install zlib.net via the NuGet Package Manager
+1. Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution
+2. Now the NuGet Package Manager will be opened. Click on Browse
+3. Search for the keyword "zlib.net" and install it
+
+### Use DLL package file
+
+1. Project -> Add Project Reference
+2. Then click on Browse and choose the DLL file
+3. Click OK
+
+## Example for using the library
 
     using System;
 	using System.Text;
@@ -45,4 +60,4 @@ Example for using the library:
 		}
 	}
 
-GOOD LUCK!
+Good Luck!
