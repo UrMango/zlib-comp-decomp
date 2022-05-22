@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>NoamRaz.ZLIB</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>NoamRaz.ZLIB</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Noam Raz</Authors>
+    <Product>ZLIB Compressor &amp; Decompressor</Product>
+    <Description>Easy to use ZLIB Binary Compressor &amp; Decompressor written in C-Sharp (C#)</Description>
+    <Copyright>Noam Raz © 2022</Copyright>
+    <PackageProjectUrl>https://noamraz.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/UrMango/zlib-comp-decomp.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="zlib.net" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
