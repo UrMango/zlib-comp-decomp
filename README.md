@@ -23,10 +23,10 @@ Open a Visual Studio C# project, Then follow the steps below.
 3. Search for the keyword "zlib.net" and install it
 
 ### Use DLL package file
-
-1. Project -> Add Project Reference
-2. Then click on Browse and choose the DLL file
-3. Click OK
+1. [Download the DLL file from the Releases page](https://github.com/UrMango/zlib-comp-decomp/releases/tag/V1.0.1)
+2. In Visual Studio - Project -> Add Project Reference
+3. Then click on Browse and choose the DLL file
+4. Click OK
 
 ## Example for using the library
 
