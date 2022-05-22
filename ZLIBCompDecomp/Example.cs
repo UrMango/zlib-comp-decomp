@@ -23,7 +23,7 @@ class Example
 		// Decompress buffer (byte array)
 		byte[] decompBuffer = ASCIIEncoding.ASCII.GetBytes("Hello ZLIB World!");
 		ZLIB.DecompressData(decompBuffer, out byte[] decompResult);
-		Console.WriteLine("Compressed Data is: ", ASCIIEncoding.ASCII.GetString(decompResult);
+		Console.WriteLine("Compressed Data is: ", ASCIIEncoding.ASCII.GetString(decompResult));
 
 	}
 }
