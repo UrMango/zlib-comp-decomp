@@ -6,7 +6,7 @@
 
 **ZLIB Binary Compressor & Decompressor written in C-Sharp (C#)**
 
-The best easy to use compressor & decompressor for zlib is ready for you to use for you projects free and open source!
+The best easy to use compressor & decompressor for zlib is ready for you to use in you projects free and open source!
 
 Options the library has to offer:
 
