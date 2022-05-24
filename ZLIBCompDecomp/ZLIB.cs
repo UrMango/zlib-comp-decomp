@@ -11,15 +11,15 @@ namespace NoamRaz.ZLIB
         /// </summary>
         /// <param name="compressContent">Text to compress</param>
         /// <param name="compressedFileName">File path to save result in</param>
+        /// <param name="encoding">Encoding to use</param>
         /// <returns>Compressed binary data as string</returns>
-        public static string CompressString(string compressContent, string compressedFileName)
+        public static string CompressString(string compressContent, string compressedFileName, Encoding encoding)
         {
-            byte[] buffer = ASCIIEncoding.ASCII.GetBytes(compressContent);
-
+            byte[] buffer = encoding.GetBytes(compressContent);
             CompressData(buffer, out byte[] outData);
             File.WriteAllBytes(compressedFileName, outData);
 
-            return ASCIIEncoding.ASCII.GetString(outData);
+            return encoding.GetString(outData);
         }
 
         /// <summary>
@@ -27,11 +27,12 @@ namespace NoamRaz.ZLIB
         /// </summary>
         /// <param name="originalFileName">File to compress</param>
         /// <param name="compressedFileName">File path to save result in</param>
+        /// <param name="encoding">Encoding to use</param>
         /// <returns>Compressed binary data as string</returns>
-        public static string CompressFile(string originalFileName, string compressedFileName)
+        public static string CompressFile(string originalFileName, string compressedFileName, Encoding encoding)
         {
             string content = File.ReadAllText(originalFileName);
-            return CompressString(content, compressedFileName);
+            return CompressString(content, compressedFileName, encoding);
         }
 
         /// <summary>
@@ -39,15 +40,16 @@ namespace NoamRaz.ZLIB
         /// </summary>
         /// <param name="compressedFileName">File to decompress</param>
         /// <param name="decompressedFileName">File path to save result in</param>
+        /// <param name="encoding">Encoding to use</param>
         /// <returns>Decompressed string data</returns>
-        public static string Decompress(string compressedFileName, string decompressedFileName)
+        public static string Decompress(string compressedFileName, string decompressedFileName, Encoding encoding)
         {
             byte[] resBuf = File.ReadAllBytes(compressedFileName);
 
             DecompressData(resBuf, out byte[] outDataDecomp);
-            File.WriteAllText(decompressedFileName, ASCIIEncoding.ASCII.GetString(outDataDecomp));
+            File.WriteAllText(decompressedFileName, encoding.GetString(outDataDecomp));
 
-            return ASCIIEncoding.ASCII.GetString(outDataDecomp);
+            return encoding.GetString(outDataDecomp);
         }
 
         /// <summary>
